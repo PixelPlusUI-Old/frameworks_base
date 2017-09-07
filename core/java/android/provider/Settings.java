@@ -4803,6 +4803,24 @@ public final class Settings {
         public static final String SCREENRECORD_VIDEO_BITRATE = "screenrecord_video_bitrate";
 
         /**
+         * Disable dashboard conditions in settings
+         * @hide
+         */
+        public static final String ENABLE_CONDITIONS = "enable_conditions";
+        /** @hide */
+        private static final Validator ENABLE_CONDITIONS_VALIDATOR =
+                BOOLEAN_VALIDATOR;
+
+        /**
+         * Disable dashboard suggestions in settings
+         * @hide
+         */
+        public static final String ENABLE_SUGGESTIONS = "enable_suggestions";
+        /** @hide */
+        private static final Validator ENABLE_SUGGESTIONS_VALIDATOR =
+                BOOLEAN_VALIDATOR;
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -4882,7 +4900,9 @@ public final class Settings {
             DOUBLE_TAP_SLEEP_LOCKSCREEN,
             VIBRATE_ON_CONNECT,
             VIBRATE_ON_CALLWAITING,
-            VIBRATE_ON_DISCONNECT
+            VIBRATE_ON_DISCONNECT,
+            ENABLE_CONDITIONS,
+            ENABLE_SUGGESTIONS
         };
 
         /**
@@ -5026,6 +5046,8 @@ public final class Settings {
             PRIVATE_SETTINGS.add(VIBRATE_ON_CONNECT);
             PRIVATE_SETTINGS.add(VIBRATE_ON_CALLWAITING);
             PRIVATE_SETTINGS.add(VIBRATE_ON_DISCONNECT);
+            PRIVATE_SETTINGS.add(ENABLE_CONDITIONS);
+            PRIVATE_SETTINGS.add(ENABLE_SUGGESTIONS);
         }
 
         /**
@@ -5144,6 +5166,8 @@ public final class Settings {
             VALIDATORS.put(VIBRATE_ON_CONNECT, VIBRATE_ON_CONNECT_VALIDATOR);
             VALIDATORS.put(VIBRATE_ON_CALLWAITING, VIBRATE_ON_CALLWAITING_VALIDATOR);
             VALIDATORS.put(VIBRATE_ON_DISCONNECT, VIBRATE_ON_DISCONNECT_VALIDATOR);
+            VALIDATORS.put(ENABLE_CONDITIONS, ENABLE_CONDITIONS_VALIDATOR);
+            VALIDATORS.put(ENABLE_SUGGESTIONS, ENABLE_SUGGESTIONS_VALIDATOR);
         }
 
         /**
