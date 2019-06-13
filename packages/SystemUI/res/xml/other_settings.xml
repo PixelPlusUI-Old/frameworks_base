@@ -31,4 +31,10 @@
         android:dependency="mobile"
         android:defaultValue="@bool/config_show4GForLTE" />
 
+    <SwitchPreference
+        android:key="show_volte"
+        android:title="@string/volte_switch_title"
+        android:summary="@string/volte_switch_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
