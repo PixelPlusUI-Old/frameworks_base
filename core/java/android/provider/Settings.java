@@ -4668,6 +4668,15 @@ public final class Settings {
 	private static final Validator QS_BLUR_VALIDATOR = BOOLEAN_VALIDATOR;
 
         /**
+         * QS blur alpha
+         * @hide
+         */
+        public static final String QS_BACKGROUND_BLUR_ALPHA = "qs_background_blur_alpha";
+
+        /** @hide */
+        private static final Validator QS_BACKGROUND_BLUR_ALPHA_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
+        /**
          * Swipe to screenshot gesture
          * Also known as Three Fingers Screenshot.
          * @hide
@@ -4891,7 +4900,8 @@ public final class Settings {
             VIBRATE_ON_CONNECT,
             VIBRATE_ON_CALLWAITING,
             VIBRATE_ON_DISCONNECT,
-            NOTIFICATION_HEADERS
+            NOTIFICATION_HEADERS,
+            QS_BACKGROUND_BLUR_ALPHA
         };
 
         /**
@@ -5154,6 +5164,7 @@ public final class Settings {
             VALIDATORS.put(VIBRATE_ON_CALLWAITING, VIBRATE_ON_CALLWAITING_VALIDATOR);
             VALIDATORS.put(VIBRATE_ON_DISCONNECT, VIBRATE_ON_DISCONNECT_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_HEADERS, NOTIFICATION_HEADERS_VALIDATOR);
+            VALIDATORS.put(QS_BACKGROUND_BLUR_ALPHA, QS_BACKGROUND_BLUR_ALPHA_VALIDATOR);
         }
 
         /**
