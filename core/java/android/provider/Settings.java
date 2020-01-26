@@ -4668,6 +4668,15 @@ public final class Settings {
 	private static final Validator QS_BLUR_VALIDATOR = BOOLEAN_VALIDATOR;
 
         /**
+         * QS blur intensity
+         * @hide
+         */
+        public static final String QS_BACKGROUND_BLUR_INTENSITY = "qs_background_blur_intensity";
+
+        /** @hide */
+        private static final Validator QS_BACKGROUND_BLUR_INTENSITY_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
+        /**
          * QS blur alpha
          * @hide
          */
@@ -4901,7 +4910,8 @@ public final class Settings {
             VIBRATE_ON_CALLWAITING,
             VIBRATE_ON_DISCONNECT,
             NOTIFICATION_HEADERS,
-            QS_BACKGROUND_BLUR_ALPHA
+            QS_BACKGROUND_BLUR_ALPHA,
+            QS_BACKGROUND_BLUR_INTENSITY,
         };
 
         /**
@@ -5165,6 +5175,7 @@ public final class Settings {
             VALIDATORS.put(VIBRATE_ON_DISCONNECT, VIBRATE_ON_DISCONNECT_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_HEADERS, NOTIFICATION_HEADERS_VALIDATOR);
             VALIDATORS.put(QS_BACKGROUND_BLUR_ALPHA, QS_BACKGROUND_BLUR_ALPHA_VALIDATOR);
+            VALIDATORS.put(QS_BACKGROUND_BLUR_INTENSITY, QS_BACKGROUND_BLUR_INTENSITY_VALIDATOR);
         }
 
         /**
