@@ -44,6 +44,7 @@ LOCAL_REQUIRED_MODULES := \
 	FontRosemarySourceOverlay \
 	FontSonySketchSourceOverlay \
 	FontSurferSourceOverlay \
+    FontAnaheim \
     FontBigNoodle \
     FontBikoHanken \
     FontComicNeue \
