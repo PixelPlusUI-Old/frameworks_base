@@ -24,4 +24,11 @@
             android:title="@string/tuner_full_importance_settings"
             android:fragment="com.android.systemui.tuner.PowerNotificationControlsFragment"/>
 
+    <SwitchPreference
+        android:key="show_fourg"
+        android:title="@string/show_fourg_title"
+        android:summary="@string/show_fourg_summary"
+        android:dependency="mobile"
+        android:defaultValue="@bool/config_show4GForLTE" />
+
 </PreferenceScreen>
