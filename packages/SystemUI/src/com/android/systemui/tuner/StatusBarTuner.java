@@ -61,7 +61,7 @@ public class StatusBarTuner extends PreferenceFragment {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.status_bar_prefs);
+        addPreferencesFromResource(R.xml.other_settings);
     }
 
     @Override
