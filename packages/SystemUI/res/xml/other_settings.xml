@@ -37,9 +37,4 @@
         android:summary="@string/volte_switch_summary"
         android:defaultValue="false" />
 
-    <com.android.systemui.tuner.ClockPreference
-        android:title="@string/tuner_time"
-        android:summary="%s"
-        android:entries="@array/clock_options" />
-
 </PreferenceScreen>
