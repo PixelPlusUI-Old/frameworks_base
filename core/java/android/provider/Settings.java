@@ -4918,7 +4918,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STATUSBAR_CLOCK_DATE_DISPLAY);
             PRIVATE_SETTINGS.add(STATUSBAR_CLOCK_DATE_STYLE);
             PRIVATE_SETTINGS.add(STATUSBAR_CLOCK_DATE_FORMAT);
->>>>>>> e9fc6e68fd2... SystemUI: statusbar clock date customization (1/2)
         }
 
         /**
