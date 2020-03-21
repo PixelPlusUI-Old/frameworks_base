@@ -4774,14 +4774,14 @@ public final class Settings {
             NETWORK_TRAFFIC_EXPANDED_STATUS_BAR_STATE,
             QS_BLUR,
 	    GESTURE_PILL_TOGGLE,
-            LOCK_SHOW_STATUS_BAR
+            LOCK_SHOW_STATUS_BAR,
             STATUS_BAR_CLOCK,
             STATUSBAR_CLOCK_STYLE,
             STATUS_BAR_CLOCK_SECONDS,
             STATUSBAR_CLOCK_AM_PM_STYLE,
             STATUSBAR_CLOCK_DATE_DISPLAY,
             STATUSBAR_CLOCK_DATE_STYLE,
-            STATUSBAR_CLOCK_DATE_FORMAT,
+            STATUSBAR_CLOCK_DATE_FORMAT
         };
 
         /**
