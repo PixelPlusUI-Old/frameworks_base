@@ -90,4 +90,7 @@
     <string name="navbar_editor_title">Editor</string>
     <string name="navbar_editor_summary">Configure navigaton bar</string>
 
+    <!-- Alerting notification header label -->
+    <string name="notification_section_header_alerting">Alerting notifications</string>
+
 </resources>
