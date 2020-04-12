@@ -255,6 +255,7 @@ public class AppTransition implements Dump {
     private final ArrayList<AppTransitionListener> mListeners = new ArrayList<>();
     private final ExecutorService mDefaultExecutor = Executors.newSingleThreadExecutor();
 
+    private SettingsObserver mSettingsObserver;
     private int mLastClipRevealMaxTranslation;
     private boolean mLastHadClipReveal;
 
