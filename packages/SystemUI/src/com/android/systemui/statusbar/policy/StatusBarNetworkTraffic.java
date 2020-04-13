@@ -372,7 +372,7 @@ public class StatusBarNetworkTraffic extends NetworkTraffic implements StatusIco
     }
 
     @Override
-    private void updateVisibility() {
+    protected void updateVisibility() {
         if (!Utils.hasNotch(mContext) && mIsEnabled &&
                 mTrafficVisible && mSystemIconVisible) {
             setVisibility(View.VISIBLE);
