@@ -1502,11 +1502,4 @@ public interface WindowManagerPolicy extends WindowManagerPolicyConstants {
      * @return whether the value was changed.
      */
     boolean setAodShowing(boolean aodShowing);
-
-    /**
-     * Long screenshot
-     * @hide
-     */
-    public void takeOPScreenshot(int type);
-    public void stopLongshotConnection();
 }
