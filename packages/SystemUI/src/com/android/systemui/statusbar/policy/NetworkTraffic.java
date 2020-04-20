@@ -25,6 +25,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.internal.util.ppui.Utils;
 import com.android.systemui.R;
 import com.android.systemui.plugins.DarkIconDispatcher;
 import com.android.systemui.plugins.DarkIconDispatcher.DarkReceiver;
@@ -295,7 +296,7 @@ public class NetworkTraffic extends TextView {
     }
 
     protected void updateVisibility() {
-        if (mIsEnabled && mTrafficVisible) {
+        if (!Utils.hasNotch(mContext) && mIsEnabled && mTrafficVisible) {
             setVisibility(View.VISIBLE);
         } else {
             setVisibility(View.GONE);
