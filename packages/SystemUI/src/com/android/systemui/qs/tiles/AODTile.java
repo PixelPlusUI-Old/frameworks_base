@@ -34,7 +34,13 @@ import com.android.systemui.R;
     private boolean mAodDisabled;
     private final Icon mIcon = ResourceIcon.get(R.drawable.ic_qs_aod);
 
-     @Inject
+    private static final ComponentName AMBIENT_DISPLAY_SETTINGS_COMPONENT = new ComponentName(
+            "com.android.settings", "com.android.settings.Settings$AmbientDisplaySettingsActivity");
+
+    private static final Intent AMBIENT_DISPLAY_SETTINGS =
+            new Intent().setComponent(AMBIENT_DISPLAY_SETTINGS_COMPONENT);
+
+    @Inject
     public AODTile(QSHost host) {
         super(host);
         mAodDisabled = Settings.Secure.getInt(mContext.getContentResolver(),
@@ -64,7 +70,7 @@ import com.android.systemui.R;
 
      @Override
     public Intent getLongClickIntent() {
-        return null;
+        return AMBIENT_DISPLAY_SETTINGS;
     }
 
      @Override
